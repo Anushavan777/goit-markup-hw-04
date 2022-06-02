@@ -817,8 +817,6 @@ SVG */
   margin-right: 30px;
 }
 
-
-
 .regular-customers-item {
 }
 
@@ -835,11 +833,15 @@ SVG */
   border-radius: 4px;
 }
 
-.regular-link-custom:hover,:focus {
-  color: #188ce8;
-  
+.regular-link-custom:hover,
+.regular-link-custom:focus {
+  border-color: #188ce8;
 }
 
-.svg-custom:hover {
-  fill: currentColor;
+.regular-link-custom:hover svg {
+  fill: #188ce8;
+}
+
+.svg-custom {
+  fill: #afb1b8;
 }
