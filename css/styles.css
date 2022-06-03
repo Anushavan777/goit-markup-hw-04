@@ -23,9 +23,11 @@ ul {
 
 body {
   /* padding-top: 80px; */
-  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   font-family: "Roboto", snat-serif;
-  color: var(--title-text-color);
+  color: var(--primary-text-color)
 }
 
 /* heder */
@@ -81,16 +83,16 @@ body {
   /* padding: 32px 853px 32px 453px; */
 }
 /* ссылки шапки сайта */
-.list {
-  /* background-color: #212121; */
-  /* Width: 294px;
+/* .list {
+  background-color: #212121;
+Width: 294px; 
 Height: 16pxl;
 Top: 32px;
 Left: 453px;
 list-style-type: none;
 display: inline-flex;
-flex-direction: row; */
-}
+flex-direction: row; 
+} */
 
 .link {
   background-color: #ffffff;
@@ -157,9 +159,6 @@ flex-direction: row; */
 .main {
 }
 
-.main-desigion-forbisness {
-  /* linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons/Img.jpg); */
-}
 
 .main-portfolio {
   padding-top: 94px;
@@ -371,12 +370,10 @@ flex-direction: row; */
   padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../imeges/hw4_jpeg_img/img\9jpg);
-  /* letter-spacing: 0.06;
-   text-transform: uppercase; */
-}
+      rgba(47, 48, 58, 0.4)),
+      
+    url(../imeges/SVG/Img\ 9.jpg);
+  }
 
 /* .main-desigion-forbisness {
   width: 1200px;
@@ -845,3 +842,30 @@ SVG */
 .svg-custom {
   fill: #afb1b8;
 }
+
+.ourteam-social-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-icon-link:hover, :focus {
+  background:#188ce8;
+}
+.social-icon-link:hover ,:focus svg {
+  color:#f5f4fa;
+}
+
+
+
+
+
