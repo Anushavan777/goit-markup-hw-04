@@ -17,12 +17,9 @@
 }
 
 /* celector- class for all ОСПК */
-ul {
-  list-style: none;
-}
+
 
 body {
-  /* padding-top: 80px; */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -33,23 +30,32 @@ body {
 /* heder */
 
 .header-page {
-  /* width: 1200;
-    margin: 0 auto; */
-  padding-top: 26px;
-  padding-bottom: 25px;
-  background-color: #ffffff;
-  color: var(--title-text-color);
-  text-align: left;
+  /* padding-top: 26px;
+  padding-bottom: 25px; */
+  font-weight: 500;
+  /* font-size: 14px;???????? */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-page .link {
+display: flex;
+align-items: center;
+padding-top: 32px;
+padding-bottom: 32px;
+
 }
 
 .navigation {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* logo */
 
-.logo-footer {
-  display: block;
-  margin-bottom: 30px;
+.logo { 
   text-decoration: none;
   font-family: Raleway;
   color: #2196f3;
@@ -58,15 +64,20 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+
+
+.header-page .logo {
   margin-right: 93px;
-  text-decoration: none;
-  font-family: Raleway;
-  color: #2196f3;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+
 }
+
+.footer-contacts .logo {
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+
 
 .logo-title-right {
   color: #000000;
@@ -79,23 +90,12 @@ body {
 .list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  /* padding: 32px 853px 32px 453px; */
+  justify-content:center;
 }
 /* ссылки шапки сайта */
-/* .list {
-  background-color: #212121;
-Width: 294px; 
-Height: 16pxl;
-Top: 32px;
-Left: 453px;
-list-style-type: none;
-display: inline-flex;
-flex-direction: row; 
-} */
+
 
 .link {
-  background-color: #ffffff;
   text-decoration: none;
   color: currentColor;
 }
@@ -116,6 +116,9 @@ flex-direction: row;
 /* header contac */
 
 .header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .contact-item {
@@ -123,23 +126,12 @@ flex-direction: row;
 }
 
 .link-header-email {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-  /* color: bgb 255 255 255 0.6; */
-  color: #757575;
-  text-decoration: none;
+
+  
 }
 
 .link-header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-  color: #757575;
-  /* color: bgb 255 255 255 0.6; */
-  text-decoration: none;
+
 }
 
 .link-email-cunrrent:hover,
@@ -152,6 +144,15 @@ flex-direction: row;
 }
 
 /* main */
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
 
 .main-studio {
 }
@@ -252,6 +253,7 @@ flex-direction: row;
     color: #FFFFFF;
 } */
 
+
 .button-hero {
   background-color: #2196f3;
   color: #ffffff;
@@ -273,6 +275,12 @@ flex-direction: row;
 }
 
 /* main section img */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .main-section-img {
 }
 
@@ -363,6 +371,7 @@ flex-direction: row;
 }
 
 .main-desigion-forbisness {
+  max-width: 1600px;
   background-color: #2f303a;
   color: #ffffff;
   text-align: center;
@@ -373,6 +382,7 @@ flex-direction: row;
       rgba(47, 48, 58, 0.4)),
       
     url(../imeges/SVG/Img\ 9.jpg);
+    
   }
 
 /* .main-desigion-forbisness {
@@ -394,15 +404,13 @@ flex-direction: row;
 /*Наши возможности  */
 
 .ourfeatures-h3-title {
-  /* font-family: Roboto;
-     font-style: Bolt; */
-  font-size: 14px;
+  /* font-size: 14px;
   line-height: 1.4;
   vertical-align: top;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  margin-bottom: 10px;
+  margin-bottom: 10px; не надо  */
 }
 
 .ourfeatures-p-text {
@@ -415,10 +423,7 @@ flex-direction: row;
 
 /*Чем мы занимаемся секция  */
 
-.whatwedoing-h2-title {
-  /* font-family: Roboto;
-    font-style: Bolt; */
-  /* width: 700; */
+.section-h2-title {
   font-size: 36px;
   line-height: 1.16;
   vertical-align: top;
@@ -426,16 +431,6 @@ flex-direction: row;
   color: #212121;
 }
 
-.ourteam-h2-title {
-  /* font-family: Roboto;
-    font-style: Bolt; */
-  /* width: 700; */
-  font-size: 36px;
-  line-height: 1.16;
-  vertical-align: top;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
 
 .ourteam-h3-title {
   font-weight: 700;
@@ -490,51 +485,32 @@ img {
 }
 
 .header-container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   align-items: center;
 }
 
-.navigation {
+.navigation-list  {
   display: flex;
   align-items: center;
+  color: var(--title-text-color);
 }
 
 .list {
-  width: 294px;
+  list-style: none;
+  /* width: 294px; */
   display: flex;
   justify-content: space-around;
-  /* margin: 32px 0px 32px 93px; */
-  /* border: 1px solid; */
   padding-left: 0% auto;
 }
 
-.list li:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 0;
-}
 
 .contact-item {
-  /* box-sizing: border-box; */
+ 
 }
 
 .item {
 }
 
-.logo {
-  /* margin-right: 93px; */
-}
 
 .logo-title-right {
 }
@@ -542,9 +518,15 @@ img {
 ul {
 }
 
-.header-container li:not(:last-child) {
+.header-container .item:not(:last-child) {
   margin-right: 50px;
 }
+
+.header-container .link:hover,
+.header-container .link:focus {
+  color: var(--accent-color);
+}
+
 
 /* ==========
 MAIN  */
@@ -732,15 +714,13 @@ PORTFOLIO ============
 +++++++++++++++++++++++
 SVG */
 
-.svg-contact-item {
+.svg-contact-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.svg-header-tel {
-  margin-right: 10px;
-  fill: currentColor;
-}
+
+
 
 .ourfeatures-svg-item {
 }
