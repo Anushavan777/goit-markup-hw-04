@@ -20,36 +20,42 @@
   <body class="body">
     <!-- шапка сайта -->
     <header class="header-page">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="navigation">
-          <a class="logo" href="index.html" lang="en">
+          <a class="logo-header" href="index.html" lang="en">
             Web<span class="logo-title-right">Studio</span></a
           >
-          <ul class="list navigation-list">
+          <ul class="list">
             <li class="item">
-              <a class="link cunrrent" href="./index.html">Студия</a>
+              <a class="link navigation-link cunrrent" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+              <a class="link navigation-link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="item">
-              <a class="link" href="./Slonik.html">Контакты</a>
+              <a class="link navigation-link" href="./Slonik.html">Контакты</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="list header-contact">
-          <li class="item contact-item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="svg-contact-icon" width="16" height="12">
+        <ul class="header-contact">
+          <li class="contact-item">
+            <a class="link-header-email link-email-cunrrent"
+              href="mailto:info@devstudio.com">
+              <svg class="svg-contact-item" width="16" height="12">
                 <use
                   href="./imeges/SVG/Sprite.svg#icon-envelope-hover"
                 ></use></svg>info@devstudio.com
             </a>
           </li>
-          <li class="item contact-item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="svg-contact-icon" width="10" height="16">
+          <li class="contact-item">
+            <a
+              class="link-header-tel link-tel-cunrrent"
+              href="tel:+380961111111">
+              <svg class="svg-header-tel" width="10" height="16">
                 <use href="./imeges/SVG/Sprite.svg#icon-smartphone"></use>
               </svg>
               +38 (096) 111-11-11
@@ -60,7 +66,7 @@
     </header>
 
     <!-- Hero -->
-    <main class="main">
+    <main class="main-studio">
       <section class="main-desigion-forbisness">
         <div class="container">
           <h1 class="desigion-forbisness-text">
@@ -71,10 +77,10 @@
         </div>
       </section>
 
-      <section class="section section-ourfeatures">
-        <div class="container">
+      <section class="section-ourfeatures">
+        <div class="ourfeatures-container">
           <h2 class="visually-hidden">Ниши особенности</h2>
-          <ul class="list section-ourfeatures-list">
+          <ul class="section-ourfeatures-list">
             <li class="ourfeatures-svg-item">
               <svg class="svg-ourfeatures" width="70" height="70">
                 <use href="./imeges/SVG/Sprite.svg#icon-antenna-1"></use>
@@ -86,7 +92,7 @@
               </p>
             </li>
 
-            <li class="ourfeatures-svg-item">
+            <li class="">
               <div class="ourfeatures-svg-div">
                 <svg class="svg-ourfeatures-style" width="70" height="70">
                   <use href="./imeges/SVG/Sprite.svg#icon-clock-1"></use>
@@ -99,7 +105,7 @@
               </p>
             </li>
 
-            <li class="ourfeatures-svg-item">
+            <li>
               <div class="ourfeatures-svg-div">
                 <svg class="svg-ourfeatures-style" width="70" height="70">
                   <use href="./imeges/SVG/Sprite.svg#icon-diagram-1"></use>
@@ -112,7 +118,7 @@
               </p>
             </li>
 
-            <li class="ourfeatures-svg-item">
+            <li>
               <div class="ourfeatures-svg-div">
                 <svg class="svg-ourfeatures-style" width="70" height="70">
                   <use href="./imeges/SVG/Sprite.svg#icon-astronaut-1"></use>
@@ -128,12 +134,10 @@
         </div>
       </section>
 
-      <!-- ЧЕМ МЫ ЗАНИМАЕМСЯ -->
-
       <section class="section-whatwedoing">
         <div class="whatwedoing-container">
           <h2 class="whatwedoing-h2-title">Чем мы занимаемся</h2>
-          <ul class="list whatwedoing-list">
+          <ul class="whatwedoing-list">
             <li>
               <img
                 src="imeges/pic1.jpg"
@@ -197,9 +201,7 @@
                   <li class="social-icon-item">
                     <a class="social-icon-link" href="">
                       <svg class="social-icon-svg" width="10" height="20">
-                        <use
-                          href="./imeges/SVG/Sprite.svg#icon-facebook-1"
-                        ></use>
+                      <use href="./imeges/SVG/Sprite.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -207,9 +209,7 @@
                   <li class="social-icon-item">
                     <a class="social-icon-link" href="">
                       <svg class="social-icon-svg" width="20" height="20">
-                        <use
-                          href="./imeges/SVG/Sprite.svg#icon-linkedin-1"
-                        ></use>
+                        <use href="./imeges/SVG/Sprite.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -294,7 +294,7 @@
 
     <footer class="footer-contacts">
       <div class="footer-container">
-        <a class="logo" href="index.html">
+        <a class="logo-footer" href="index.html">
           Web<span class="footer-logo-title-right">Studio</span></a
         >
         <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
