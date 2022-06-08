@@ -126,6 +126,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
+
   margin-bottom: 50px;
 }
 
@@ -245,10 +246,10 @@ ontac */
 
 .team-item {
   background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px; 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  flex-basis:calc(100% / 4 - 30px)
-
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-content {
@@ -301,14 +302,9 @@ ontac */
   background-color: #188ce8;
 }
 
-/* =========== portfolio ========= */
+/* ============ customers =========== */
 
-.main-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.portfolio-container {
+.customers-container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
@@ -316,14 +312,64 @@ ontac */
   margin-left: auto;
 }
 
+.section-title-h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+/* .customers-item {
+  flex-basis: calc(100% / 5 - 30px);
+} */
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #188ce8;
+}
+
+.customers-link:hover svg {
+  fill: #188ce8;
+}
+
+.svg-custom {
+  fill: #afb1b8;
+}
+
+/* =========== portfolio ========= */
+
+.main-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .main-section-button-list {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .main-section-button-list li:not(:last-child) {
   margin-right: 8px;
+
 }
 
 .button {
@@ -336,9 +382,6 @@ ontac */
   background-color: transparent;
   cursor: pointer;
   box-shadow: 0px 0px 0px 0px #f3ebeb;
-
-  /* box-shadow: 0px 4px 4px #40000000, 0em 0 0.4em rgb(177, 177, 172); */
-  /* СЕРГЕЙ ПОДСкажите с тенью ПОЖАЛУЙСТО */
 }
 
 .button-mode-blue {
@@ -352,9 +395,6 @@ ontac */
   cursor: pointer;
   padding: 6px 24px;
   border: none;
-
-  /* margin-right: 5px !important;
-  padding: 6px 22px !important; */
 }
 
 .button {
@@ -374,14 +414,7 @@ ontac */
   border-radius: 4px;
 }
 
-/* .button-mode-blue:hover{
-    color: #FFFFFF;
-} */
-
 /* main section img */
-
-.main-section-img {
-}
 
 .section-img-list {
   font-size: 18sp;
@@ -433,8 +466,6 @@ ontac */
   margin-bottom: 9px;
 }
 
-.footer-contact-item {
-}
 .footer-email-link {
   font-size: 14px;
   line-height: 1.4em;
@@ -450,14 +481,6 @@ ontac */
   text-decoration: none;
 }
 
-/* .footer-email-link:hover,
-:focus {
-  color: #188ce8;
-}
-.footer-tel-link:hover,
-:focus {
-  color: #188ce8;
-} */
 
 /* 
 ==================================================
@@ -517,9 +540,6 @@ MAIN  */
   padding-bottom: 60px;
 }
 
-.footer-container {
-}
-
 /* ===================
 ======================
 PORTFOLIO ============
@@ -562,68 +582,9 @@ PORTFOLIO ============
   margin-bottom: 30px;
 }
 
-/* .card-img-item :first-child  {
-    margin-bottom: 30px;
-}
-
-.card-img-item :nth-child(2) {
-    margin-bottom: 30px;
-} */
-
 /* ===================
 +++++++++++++++++++++++
 SVG */
-
-/* ПОСТОЯННЫЕ КЛИЕНТЫ */
-
-.customers-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.section-title-h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.customers-title-list {
-  display: flex;
-  justify-content: center;
-}
-
-.customers-title-list li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.regular-link-custom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
-.regular-link-custom:hover,
-.regular-link-custom:focus {
-  border-color: #188ce8;
-}
-
-.regular-link-custom:hover svg {
-  fill: #188ce8;
-}
-
-.svg-custom {
-  fill: #afb1b8;
-}
 
 /* ========== social-list ========= */
 
@@ -635,7 +596,6 @@ SVG */
 
 .social-item:not(:last-child) {
   margin-right: 10px;
-
 }
 
 .social-link {
@@ -645,7 +605,7 @@ SVG */
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color:#afb1b8;
+  color: #afb1b8;
 }
 
 .social-icon-svg {
