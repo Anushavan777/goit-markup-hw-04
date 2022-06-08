@@ -416,7 +416,7 @@ ontac */
 
 /* main section img */
 
-.section-img-list {
+.img-list {
   font-size: 18sp;
   line-height: 2;
   list-style-type: none;
@@ -425,7 +425,7 @@ ontac */
   letter-spacing: 0.06em;
 }
 
-.section-item-img {
+.item-img {
   font-weight: 370px;
   height: 404px;
   justify-content: flex-start;
@@ -434,12 +434,10 @@ ontac */
 .item-img-text-position {
   display: block;
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
-.main-sectiin-porfolio-title {
+.porfolio-h4-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -490,13 +488,7 @@ ontac */
 
 /*Наши возможности  */
 
-/* .ourfeatures-p-text {
-  font-size: 14px;
-  line-height: 1.7;
-  vertical-align: top;
-  letter-spacing: 0.03em;
-  color: #757575;
-} */
+
 
 /*Чем мы занимаемся секция  */
 
@@ -557,28 +549,20 @@ PORTFOLIO ============
   padding-bottom: 94px;
 }
 
-.section-img-list {
+.img-list {
   display: flex;
   flex-wrap: wrap;
-  /* margin-right: -30px;
-  margin-bottom: -30px; */
-  /* align-items:center;
-    justify-content:space-between;
-    align-content:flex-start;
-    text-align:left;
-    border: 1px solid tomato;
-    margin: 0 auto; */
 }
 
-.section-item-img {
+.item-img {
   width: calc((100% - 60px) / 3);
 }
 
-.section-item-img:not(:nth-child(3n)) {
+.item-img:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.section-item-img:not(:nth-last-child(-n + 3)) {
+.item-img:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
