@@ -108,6 +108,10 @@ body {
   padding-bottom: 94px;
 }
 
+.section-ourteam {
+  background: var(--secondary-background);
+}
+
 .section-h2-title {
   font-size: 36px;
   line-height: 1.16;
@@ -180,7 +184,7 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
 }
 
 .footer-div1 {
@@ -197,7 +201,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:var(--primary-white-color)
+  color: var(--primary-white-color);
 }
 
 .footer-contacts .logo {
@@ -292,8 +296,16 @@ body {
 
 /* ========== what =========== */
 
+.what {
+  padding-top: 0;
+}
+
 .what-item {
   position: relative;
+}
+
+.what-item {
+  flex-basis: calc((100% - (3 - 1) * 30px) / 3);
 }
 
 .subtext {
@@ -304,22 +316,18 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 70px;
+  padding: 27px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: #fff;
-  background-color:var(--footer-background)
+  background: rgba(47, 48, 58, 0.8);
+  /* background-color: rgba(47, 48, 58, 0.8);?????? */
 }
 
 
-.what-item {
-  flex-basis: calc(100% / 3 - 30px);
-}
 
-.what {
-  padding: 0;
-}
+
 
 /* ========== team ========== */
 
@@ -328,7 +336,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - (4 - 1) * 30px) / 4);
 }
 
 .team-content {
@@ -426,6 +434,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  column-gap: 8px;
 }
 
 .filter-listli:not(:last-child) {
@@ -451,10 +460,10 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  background-color: transparent;
   cursor: pointer;
   padding: 6px 24px;
   border: none;
+  border-radius: 4px;
 }
 
 .button {
@@ -464,7 +473,8 @@ body {
   border-radius: 4px;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-backgrounde);
   cursor: pointer;
   color: #ffffff;
@@ -489,8 +499,7 @@ body {
 .ourfeatures-p-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+
 }
 
 /*===footer===*/
@@ -501,7 +510,6 @@ body {
 
 .footer-contacts {
   background-color: #2f303a;
-
 }
 
 .footer-contacts-list {
@@ -554,8 +562,6 @@ PORTFOLIO ============
 ====================== */
 .main-section-button {
   padding-top: 94px;
-  
-
 }
 
 .main-img-container {
@@ -572,9 +578,37 @@ PORTFOLIO ============
 }
 
 .portfolio-link {
-  /* display: block;
-  text-decoration: none; */
+  display: flex;
+  flex-direction: column;
+  /* text-decoration: none; */
 }
+
+.portfolio-link:hover ,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+} 
+
+.hover-overlay {
+  transition-duration: 500ms;
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  color: var(--white-text);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ========== social-list ========= */
 
 .social-list {
